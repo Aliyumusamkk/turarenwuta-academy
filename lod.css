@@ -1,0 +1,40 @@
+body{
+    background-color: #eee;
+}
+.loder{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: lod;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    text-wrap: nowrap;
+}
+
+@keyframes lod{
+    0%   {
+        font-size: 16px;
+    }
+    25%  {
+        font-size: 18px;
+        color: hsla(7, 75%, 49%, 0.521);
+    }
+    50%  {
+        font-size: 20px;
+        color: cadetblue;
+    }
+    100% {
+        font-size: 22px;
+        color: goldenrod;
+    }
+
+}
+
+#para{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}

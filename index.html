@@ -3,10 +3,12 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Turare Wuta Academy</title>
+            <title>Turaren Wuta Academy</title>
 
             <!----main--->
             <link rel="stylesheet" href="styles.css">
+
+            <link rel="stylesheet" href="lod.css">
 
             <style>
               #register-btn{
@@ -14,9 +16,10 @@
                 background-color: hsla(9, 82%, 29%, 0.944);
                 text-decoration: none;
                 color: #fff;
-                padding: 10px 80px;
+                padding: 10px 75px;
                 border-radius: 5px;
                 transition: 1s;
+                font-size: 20px;
                 border: 2px solid cadetblue;
               }
               #register-btn:hover{
@@ -24,10 +27,22 @@
                 border: 2px solid hsla(11, 90%, 30%, 0.963);
 
               }
-            </style>
+
+              @media (max-width: 700px){
+                #register-btn{
+                  margin-bottom: 20px;
+                  
+                }
+              }
+
+              </style>
         
         </head>
         <body>
+          <div class="loder" id="pre">
+            Online Turaren Wuta Academy
+        </div>
+        <!-- <p> Please Wait...</p> -->
           <section class="header">
       <nav>
         <a href="index.html" class="navbar-brand p-0"><img src="./img/shop/logo1.jfif" alt="Logo"></a>
@@ -36,6 +51,7 @@
           <span id="hide"><img src="close.png" alt=""></i></span>
             <ul>
               <li><a href="index.html">Home</a></li>
+              <li><a href="loder.html">Home</a></li>
               <li><a href="#about" style="scroll-behavior: smooth;">About</a></li>
               <li><a href="#contact" style="scroll-behavior: smooth;">Contact</a></li>
             </ul>
@@ -79,17 +95,17 @@
           <a href="#" class="btns">Ask How</a>
         </section>
 
-        <h5 style="text-align: center; margin: 20px; font-size: 20px;" id="about">ABOUT US</h5>
+        <h5 style="text-align: center; margin: 15px; font-size: 20px;" id="about">ABOUT US</h5>
 
         <section id="abtpadding">
           <img src="./img/tr9.jfif" alt="">
           <div>
             <h2 >Who We Are?</h2>
-            <p style="font-size: 14px;">Turaren Wuta Academy Makarantane da zai koyar dakai hanyoyi daban-daban yadda zaki/ka koyi gyaran turaren wuta kala daban daban. Muna koyar da wasu dabarun na musamman Akan turaren Amare awannan Makarantar. Bayan kin/ka koyi wannan sana'ar zai baki/ka daman habaka hanyar samun makudan kudade ko hamaka hanyar kasuwancinki/ka koma ki/ka iya yi don anfanan kanki/ka. Yi maza kiyi/kayi Register ta hanyar danna button dake kasan shafin ko ki tuntubemu don karin bayani.
+            <p style="font-size: 16px;">Turaren Wuta Academy Makarantane da zai koyar dakai hanyoyi daban-daban yadda zaki/ka koyi gyaran turaren wuta kala daban daban. Muna koyar da wasu dabarun na musamman Akan turaren Amare awannan Makarantar. Bayan kin/ka koyi wannan sana'ar zai baki/ka daman habaka hanyar samun makudan kudade ko hamaka hanyar kasuwancinki/ka koma ki/ka iya yi don anfanan kanki/ka. Yi maza kiyi/kayi Register ta hanyar danna button dake kasan shafin ko ki tuntubemu don karin bayani.
             
             </p>
             <br>
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Zaki/ka iya tuntubanmu kai tsaye ta wannan Lamban 09073044832 Don tattaunawa akan abunda bamusa a wannan shaifinba.</marquee>
+            <marquee bgcolor="#ccc" loop="-1" scrollamount="3" width="100%">Zaki/ka iya tuntubanmu kai tsaye ta wannan Lamban 09073044832 Don tattaunawa akan abunda bamusa a wannan shaifinba.</marquee>
           </div>
         </section>
 
@@ -103,14 +119,15 @@
           <br>
         </section>
        
-    <hr>  
+   <br>
+   <hr>
         <footer id="padding">
             <div class="col">
               <h4>Contact</h4>
-              <p><strong>Address: </strong>Jugwal Galdimare ward Biu Borno State</p>
-              <p><strong>Email: </strong> aliyumusa77@gmail.com</p>
+              <p><strong>Address: </strong> Adamawa State</p>
+              <p><strong>Email: </strong> Muhaamad92@gmail.com</p>
               <p><strong>Phone: </strong> 09073044832 </p>
-              <p><strong>Hours: </strong>Mon-Sun: 8:00AM-6:00PM</p>
+              <p><strong>Hours: </strong> Mon-Sun: 8:00AM-6:00PM</p>
               <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
@@ -177,5 +194,11 @@
 
                        <!-- Template Javascript -->
                        <script src="hk/js/main.js"></script>
+                       <script>
+                        var loder = document.getElementById("pre");
+                        window.addEventListener("load", function(){
+                          loder.style.display = "none";
+                        })
+                       </script>
         </body>
         </html>
