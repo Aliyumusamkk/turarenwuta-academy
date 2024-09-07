@@ -66,8 +66,7 @@
 }
 
 .navbar .navbar-brand img {
-    max-height: 70px;
-    border-radius: 50%;
+    max-height: 75px;
 }
 
 .navbar .dropdown-toggle::after {
