@@ -92,7 +92,7 @@ nav{
 .text-box h1{
     padding-bottom: 15px;
     font-size: 40px;
-    text-shadow: 2px 2px 5px goldenrod;
+    text-shadow: 2px 3px 3px rgb(144, 3, 3);
 }
 .text-box span{
     font-size: 17px;
@@ -110,11 +110,8 @@ nav{
     padding: 12px 30px;
     position: relative;
     border-radius: 5%;
-    background: hsla(7, 75%, 49%, 0.521);
+    background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
     transition: 1s;
-}
-.hero-btn:hover{
-    background-color: cadetblue;
 }
 
 #hide{
@@ -191,7 +188,6 @@ nav{
         background-color: cadetblue;
     }
 
-   
 }
 
 .product1{
@@ -228,6 +224,29 @@ nav{
     border-radius: 7px;
 }
 
+.list{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    background-color: #fdfcfc;
+    width: 80%;
+    padding: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgb(174, 172, 172);
+}
+.list h3{
+text-wrap: nowrap;
+padding: 5px;
+font-size: 16px;
+color: cadetblue;
+}
+
+.list ol li{
+    font-size: 14px;
+}
 
 .banner{
     display: flex;
@@ -257,7 +276,7 @@ nav{
 
 .btns{
     text-decoration: none;
-    background: hsla(11, 90%, 30%, 0.963);
+    background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
     border: 1px solid #fff;
     border-radius: 5px;
     color: #fff;
@@ -269,9 +288,7 @@ nav{
     font-size: 16px;
     transition: 1s;
 }
-.banner a:hover{
-    background: rgb(144, 214, 216);
-}
+
 
 
 /* ==============ABOUT=================*/
