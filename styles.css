@@ -112,6 +112,20 @@ nav{
     border-radius: 5%;
     background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
     transition: 1s;
+    animation-name: hbtn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hbtn{
+    0%{
+        background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
+    }
+
+    100%{
+        background: linear-gradient(rgb(255, 0, 47), rgb(144, 3, 3));
+    }
+
 }
 
 #hide{
@@ -287,6 +301,20 @@ color: cadetblue;
     margin: 15px 0;
     font-size: 16px;
     transition: 1s;
+    animation-name: hbtn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hbtn{
+    0%{
+        background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
+    }
+
+    100%{
+        background: linear-gradient(rgb(255, 0, 47), rgb(144, 3, 3));
+    }
+
 }
 
 
