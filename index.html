@@ -77,19 +77,54 @@
               .regdetails span{
                color: hsla(145, 93%, 38%, 0.963);
               }
+               .sorry{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 45px;
+                background-color: hsla(196, 92%, 36%, 0.557);
+                width: 80%;
+               }
+               .sorry h1{
+                text-align: center;
+                color: red;
+                text-transform: capitalize;
+                font-size: 16px;
+               }
+               .sorry a{
+                text-decoration: none;
+                text-align: center;
+                background: #fff;
+                padding: 2px 6px;
+                color: rgb(0, 81, 255);
+                margin: 10px;
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: bold;
+                border-radius: 3px;
+                border: none;               
+               }
 
               </style>
         
         </head>
         <body>
-          <div id="preloader">
+          <div class="sorry">
+            <h1>Sorry! The Page Is No Longer function</h1>
+            <a href="tel:+2348069075601">Call Developer</a>
+          </div>
+
+          <!-- <div id="preloader">
             <h4>Oline Turaren Wuta Academy</h4>
             <p>Please Wait...</p>
           </div>
-        <!-- <p> Please Wait...</p> -->
+       
           <section class="header">
       <nav>
-        <!-- <a href="index.html" class="navbar-brand p-0"><img src="./img/shop/logo.jpeg" alt="Logo"></a> -->
+     
         <h1 class="text-logo">ACADEMY</h1>
         <div class="nav-links" id="navbar">
           <span id="hide"><img src="close.png" alt=""></i></span>
@@ -204,7 +239,6 @@
             <div class="col" id="back">
               <h4>Contact</h4>
               <p><strong>Address: </strong> Adamawa State</p>
-              <!-- <p><strong>Email: </strong> Muhaamad92@gmail.com</p> -->
               <p><strong>Phone: </strong> 07073473646 </p>
               <p><strong>Hours: </strong> Mon-Sun: 8:00AM-6:00PM</p>
               <div class="follow">
@@ -261,7 +295,7 @@
                     </script>
 
 
-                       <!-- JavaScript Libraries -->
+                       
                        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
                        <script src="hk/lib/wow/wow.min.js"></script>
@@ -271,13 +305,13 @@
                        <script src="hk/lib/owlcarousel/owl.carousel.min.js"></script>
                        <script src="hk/lib/lightbox/js/lightbox.min.js"></script>
 
-                       <!-- Template Javascript -->
+                      
                        <script src="hk/js/main.js"></script>
                        <script>
                         var loder = document.getElementById("preloader");
                         window.addEventListener("load", function(){
                           loder.style.display = "none";
                         })
-                       </script>
+                       </script> -->
         </body>
         </html>
