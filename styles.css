@@ -87,13 +87,26 @@ nav{
     color: #fff;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 20px 0;   
+    padding: 25px 0;  
 }
 .text-box h1{
     padding-bottom: 15px;
     font-size: 40px;
-    text-shadow: 2px 3px 3px rgb(144, 3, 3);
+    text-shadow: 2px 3px 3px rgb(196, 4, 4);
+    animation-name: textbox;
+    animation-duration: 2s;
+    
 }
+
+@keyframes textbox{
+    0%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 40px;
+    }
+}
+
 .text-box span{
     font-size: 17px;
     color: rgb(230, 178, 45);
@@ -109,11 +122,11 @@ nav{
     border: 2px solid #fff;
     padding: 12px 30px;
     position: relative;
-    border-radius: 5%;
     background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
     transition: 1s;
     animation-name: hbtn;
     animation-duration: 1s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
@@ -138,8 +151,19 @@ nav{
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
+        animation-name: nnn;
+        animation-duration: 2s;
     }
+     @keyframes nnn{
+        0%{
+            font-size: 25px;
+        }
+        100%{
+            font-size: 20px;
+        }
+     }
+
      .text-box p{
         margin: 10px 0 40px;
         font-size: 16px;
@@ -291,7 +315,7 @@ color: cadetblue;
 .btns{
     text-decoration: none;
     background: linear-gradient(rgb(144, 3, 3), rgb(255, 0, 47));
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
     width: 30%;
@@ -303,6 +327,7 @@ color: cadetblue;
     transition: 1s;
     animation-name: hbtn;
     animation-duration: 1s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
