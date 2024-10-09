@@ -41,10 +41,7 @@
                   margin-bottom: 20px;
                   
                 }
-                .regdetails{
-                position: absolute;
-                margin-top: 60px;
-              }
+            
               .regdetails span{
                 display: inline-block;
               }
@@ -61,21 +58,29 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: 80%;
+                box-shadow: 0px 0px 12px rgb(174, 172, 172);
                 text-align: left;
-                background: #dad7d7;
+                background-color: #fdfcfc;
                 padding: 20px;
                 border-radius: 5px;
                 overflow: hidden;
                 margin-top: 40px;
-                border: 3px dotted cadetblue;
               }
               .regdetails h4{
-                padding: 8px 0;
+                padding: 5px 0 10px 0;
                 font-size: 20px;
               }
              
               .regdetails span{
                color: hsla(145, 93%, 38%, 0.963);
+              }
+              .mv{
+                position: absolute;
+                width: 100%;
+                height: 90vh;
+                background-color: transparent;
+                margin-top: 45px;
+                z-index: 100;
               }
             </style>
         
@@ -89,6 +94,7 @@
           </div>
        
           <section class="header">
+            <div class="mv" id="rmv"></div>
       <nav>
      
         <h1 class="text-logo">ACADEMY</h1>
@@ -97,7 +103,7 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="#about" style="scroll-behavior: smooth;">About</a></li>
-              <li><a href="https://wa.me/+2349073044832">Contact</a></li>
+              <li><a href="#back">Contact</a></li>
             </ul>
         </div>
         <span id="show"><img src="nav1.jpeg" alt=""></span>   
@@ -241,7 +247,7 @@
               
             </div>
             <div class="copyright">
-              <p>Copyright@ MKK_BIU TECHNOLOGIES <br> <a href="https://wa.me/+2348069075601">Disign by | Aliyu Musa Kala-Kala</a></p>
+              <p>Copyright@ MKK_BIU TECHNOLOGIES <br> <a href="https://wa.me/+2348069075601">Design by | Aliyu Musa Kala-Kala</a></p>
             </div>
         </footer>
 
@@ -249,6 +255,8 @@
                 let navbar = document.getElementById("navbar");
                 let hide = document.getElementById("hide");
                 let show = document.getElementById("show");
+                let rmv = document.getElementById("rmv");
+                
 
 
                 show.onclick = ()=>{
@@ -257,6 +265,10 @@
 
                 hide.onclick = ()=>{
                     navbar.style.right= "-200px";
+                }
+
+                rmv.onclick = () =>{
+                  navbar.style.right= "-200px";
                 }
                     </script>
 

@@ -16,6 +16,7 @@ body{
  transform: translate(-50%, -50%);
  animation-name: lod;
  animation-duration: 1.5s;
+ animation-direction: alternate;
  animation-iteration-count: infinite;
  text-wrap: nowrap;
 }
